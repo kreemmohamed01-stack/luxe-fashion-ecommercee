@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXE Accessories Collection</title>
+  <meta name="description" content="Discover the LUXE Accessories collection with six premium looks, cinematic transitions and refined luxury product details.">
+  <meta name="theme-color" content="#050505">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="collection.css">
+  <link rel="stylesheet" href="shared-commerce.css">
+  <link rel="stylesheet" href="shared-cart.css">
+  <link rel="stylesheet" href="shared-wishlist.css">
+  <link rel="stylesheet" href="shared-search.css">
+</head>
+<body class="collection-page" data-collection="accessories">
+  <div class="collection-cursor" aria-hidden="true"></div>
+  <div class="collection-cursor-ring" aria-hidden="true"></div>
+
+  <header class="collection-header">
+    <div class="collection-header__inner">
+      <a class="collection-brand" href="index.html">LUXE</a>
+
+      <nav class="collection-nav" aria-label="Collection navigation">
+        <a href="men.html" data-collection-link="men">Men</a>
+        <a href="women.html" data-collection-link="women">Women</a>
+        <a href="accessories.html" data-collection-link="accessories">Accessories</a>
+        <a href="new-arrivals.html" data-collection-link="new-arrivals">New Arrivals</a>
+        <a href="index.html#about">About Us</a>
+      </nav>
+
+      <div class="collection-actions" aria-label="Quick actions">
+        <button class="collection-action" type="button" data-search-trigger aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16L21 21"></path></svg>
+        </button>
+        <a class="collection-action" href="wishlist.html" data-wishlist-nav aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg>
+        </a>
+        <button class="collection-action" type="button" data-cart-open aria-label="Bag">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5h11l-.8 11h-9.4Z"></path><path d="M9 9V7.5a3 3 0 1 1 6 0V9"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="collection-main">
+    <div class="collection-page__shell">
+      <a class="collection-back" href="index.html" data-reveal>
+        <span class="collection-back__arrow" aria-hidden="true">&larr;</span>
+        <span>Back To Home</span>
+      </a>
+
+      <section class="collection-showcase" aria-label="Accessories collection showcase">
+        <section class="collection-stage" data-reveal>
+          <button class="collection-stage__arrow collection-stage__arrow--prev" type="button" data-prev data-magnetic aria-label="Previous product">
+            <span aria-hidden="true">&larr;</span>
+          </button>
+
+          <div class="collection-stage__media" data-stage-media>
+            <div class="collection-stage__ambient" aria-hidden="true"></div>
+            <figure class="collection-stage__preview" data-preview-figure aria-hidden="true">
+              <img class="collection-stage__model" src="" alt="" data-preview-image>
+            </figure>
+            <figure class="collection-stage__incoming" data-incoming-figure hidden aria-hidden="true">
+              <img class="collection-stage__model" src="" alt="" data-incoming-image>
+            </figure>
+            <figure class="collection-stage__active" data-active-figure>
+              <img class="collection-stage__model" src="" alt="" data-active-image>
+            </figure>
+          </div>
+
+          <button class="collection-stage__arrow collection-stage__arrow--next" type="button" data-next data-magnetic aria-label="Next product">
+            <span aria-hidden="true">&rarr;</span>
+          </button>
+        </section>
+
+        <aside class="collection-panel" data-look-panel data-reveal>
+          <div class="collection-product-card" data-collection-card></div>
+        </aside>
+
+        <div class="collection-showcase__footer" data-reveal>
+          <div class="collection-showcase__counter" aria-live="polite">
+            <span data-bottom-counter>01</span>
+            <span>/</span>
+            <span data-look-total>06</span>
+          </div>
+
+          <div class="collection-pagination" data-pagination aria-label="Product pagination"></div>
+
+          <div class="collection-showcase__navtext">
+            <button class="collection-showcase__navlink" type="button" data-prev-text data-magnetic>
+              <span>PREV</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+            <button class="collection-showcase__navlink" type="button" data-next-text data-magnetic>
+              <span>NEXT</span>
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="search-overlay" data-search-overlay aria-hidden="true">
+    <div class="search-overlay__backdrop" data-search-close></div>
+
+    <div class="search-overlay__panel" role="dialog" aria-modal="true" aria-labelledby="search-overlay-title">
+      <button class="search-overlay__close" type="button" data-search-close aria-label="Close search overlay">
+        <span class="search-overlay__close-copy">ESC</span>
+        <span class="search-overlay__close-copy search-overlay__close-copy--muted">TO CLOSE</span>
+        <span class="search-overlay__close-icon" aria-hidden="true">&times;</span>
+      </button>
+
+      <img class="search-overlay__figure" src="assets/images/men_5-removebg-preview.png" alt="" aria-hidden="true">
+
+      <div class="search-overlay__top">
+        <div class="search-overlay__intro">
+          <h2 class="search-overlay__title" id="search-overlay-title">SEARCH</h2>
+        </div>
+
+        <label class="search-overlay__input-shell" for="search-overlay-input">
+          <span class="search-overlay__input-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16L21 21"></path></svg>
+          </span>
+          <input class="search-overlay__input" id="search-overlay-input" type="search" placeholder="Search products..." autocomplete="off" data-search-input>
+          <button class="search-overlay__clear" type="button" data-search-clear aria-label="Clear search">&times;</button>
+        </label>
+      </div>
+
+      <div class="search-overlay__body">
+        <aside class="search-overlay__sidebar">
+          <section class="search-overlay__group">
+            <h3 class="search-overlay__section-title">POPULAR SEARCHES</h3>
+            <div class="search-overlay__popular-list">
+              <button class="search-overlay__popular-item" type="button" data-search-term="Suits"><span>Suits</span><span aria-hidden="true">&nearr;</span></button>
+              <button class="search-overlay__popular-item" type="button" data-search-term="Jackets"><span>Jackets</span><span aria-hidden="true">&nearr;</span></button>
+              <button class="search-overlay__popular-item" type="button" data-search-term="Shoes"><span>Shoes</span><span aria-hidden="true">&nearr;</span></button>
+              <button class="search-overlay__popular-item" type="button" data-search-term="Accessories"><span>Accessories</span><span aria-hidden="true">&nearr;</span></button>
+              <button class="search-overlay__popular-item" type="button" data-search-term="New Arrivals"><span>New Arrivals</span><span aria-hidden="true">&nearr;</span></button>
+            </div>
+          </section>
+
+          <section class="search-overlay__group">
+            <h3 class="search-overlay__section-title">TRENDING NOW</h3>
+            <div class="search-overlay__trending-grid" data-search-trending></div>
+          </section>
+
+          <a class="search-overlay__cta" href="index.html#collections" data-search-close>
+            <span>VIEW ALL PRODUCTS</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </aside>
+
+        <section class="search-overlay__results-pane">
+          <div class="search-overlay__results-head">
+            <h3 class="search-overlay__section-title">SEARCH RESULTS</h3>
+            <span class="search-overlay__results-count" data-search-count>RESULTS</span>
+          </div>
+
+          <div class="search-overlay__results" data-search-results></div>
+
+          <a class="search-overlay__cta search-overlay__cta--results" href="index.html#collections" data-search-all-results data-search-close hidden>
+            <span>VIEW ALL RESULTS</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </section>
+      </div>
+
+      <div class="search-overlay__benefits">
+        <div class="search-overlay__benefit"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8.5h11v7H3z"></path><path d="M14 10h3.6l2.4 2.6v2.9H14z"></path><circle cx="7.3" cy="18" r="1.5"></circle><circle cx="17.2" cy="18" r="1.5"></circle></svg><span>FREE WORLDWIDE SHIPPING</span></div>
+        <div class="search-overlay__benefit"><svg viewBox="0 0 24 24" fill="none"><path d="M7 7.5h10"></path><path d="M7 12h8"></path><path d="M7 16.5h6"></path><path d="M18 5v4h-4"></path><path d="M18 9a7 7 0 1 1-2.1-5"></path></svg><span>30-DAY RETURNS</span></div>
+        <div class="search-overlay__benefit"><svg viewBox="0 0 24 24" fill="none"><path d="M5.5 9.5h13v10h-13z"></path><path d="M8.5 9.5V7.9a3.5 3.5 0 1 1 7 0v1.6"></path></svg><span>SECURE PAYMENTS</span></div>
+        <div class="search-overlay__benefit"><svg viewBox="0 0 24 24" fill="none"><path d="m12 3.8 2.5 5.1 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z"></path></svg><span>PREMIUM QUALITY</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="shared-cart.js"></script>
+  <script src="shared-wishlist.js"></script>
+  <script src="shared-search.js"></script>
+  <script src="collection.js"></script>
+</body>
+</html>

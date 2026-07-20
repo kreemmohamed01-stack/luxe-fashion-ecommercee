@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXE | Luxury Fashion Crafted For Modern Icons</title>
+  <meta
+    name="description"
+    content="LUXE is a premium luxury fashion brand experience featuring a cinematic hero, refined interactions, and timeless modern elegance."
+  >
+  <meta
+    name="keywords"
+    content="LUXE, luxury fashion, premium brand, modern icons, designer fashion, couture, fashion film"
+  >
+  <meta name="theme-color" content="#000000">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:title" content="LUXE | Luxury Fashion Crafted For Modern Icons">
+  <meta
+    property="og:description"
+    content="An unforgettable luxury fashion landing experience handcrafted in pure HTML, CSS, and JavaScript."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/logo.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LUXE | Luxury Fashion Crafted For Modern Icons">
+  <meta
+    name="twitter:description"
+    content="Cinematic, elegant, and unforgettable luxury fashion built for modern icons."
+  >
+  <meta name="twitter:image" content="assets/images/logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="shared-cart.css">
+  <link rel="stylesheet" href="shared-wishlist.css">
+</head>
+<body class="is-ready">
+  <section class="intro-screen" aria-label="LUXE opening screen" data-intro-screen>
+    <div class="intro-screen__media" aria-hidden="true">
+      <img src="assets/images/opening-screen.jpg" alt="">
+    </div>
+    <div class="intro-screen__grain" aria-hidden="true"></div>
+    <div class="intro-screen__vignette" aria-hidden="true"></div>
+
+    <div class="intro-screen__content">
+      <p class="intro-screen__brand">LUXE</p>
+      <p class="intro-screen__subtitle">THE HOUSE OF MODERN LUXURY</p>
+      <button class="intro-screen__button" type="button" data-intro-enter data-cursor="grow">ENTER</button>
+    </div>
+  </section>
+
+  <div class="cursor cursor--dot"></div>
+  <div class="cursor cursor--ring"></div>
+
+  <div class="dust-layer" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand reveal reveal--brand" href="#home" data-cursor="grow" aria-label="LUXE home">
+        <img src="assets/images/logo.jpeg" alt="LUXE">
+      </a>
+
+      <div class="nav-links reveal reveal--nav-links" role="list">
+        <a href="#home" data-cursor="grow">Home</a>
+        <a href="new-arrivals.html" data-cursor="grow">New Arrival</a>
+        <a href="men.html" data-cursor="grow">Men</a>
+        <a href="women.html" data-cursor="grow">Women</a>
+        <a href="#collections" data-cursor="grow">Collections</a>
+        <a href="#about" data-cursor="grow">About</a>
+      </div>
+
+      <div class="nav-actions reveal reveal--nav-actions">
+        <button class="nav-icon" type="button" data-search-trigger data-cursor="grow" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.5"></circle>
+            <path d="M16 16L21 21"></path>
+          </svg>
+        </button>
+        <button class="nav-icon" type="button" data-cursor="grow" data-wishlist-nav aria-label="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path>
+          </svg>
+        </button>
+        <button class="nav-icon nav-icon--cart" type="button" data-cart-open data-cursor="grow" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 5h2l2.25 9.5h10.5L20 7.75H6.25"></path>
+            <circle cx="9" cy="19" r="1.2"></circle>
+            <circle cx="17" cy="19" r="1.2"></circle>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="hero__media">
+      <video
+        class="hero__video"
+        poster="assets/images/banner.jpg"
+        autoplay
+        muted
+        loop
+        playsinline
+        webkit-playsinline="true"
+        preload="auto"
+        aria-label="LUXE runway hero video"
+      >
+        <source src="assets/video/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero__overlay"></div>
+      <div class="hero__vignette"></div>
+      <div class="hero__sheen" aria-hidden="true"></div>
+    </div>
+
+    <section class="hero__content" aria-label="LUXE hero">
+      <p class="hero__eyebrow reveal reveal--1">NEW COLLECTION 2026</p>
+      <h1 class="hero__title reveal reveal--2">LUXE</h1>
+      <p class="hero__subtitle reveal reveal--3">Luxury Fashion Crafted For Modern Icons</p>
+
+      <div class="hero__actions reveal reveal--4">
+        <a class="button button--gold" href="#collections" data-cursor="grow">
+          <span>Shop Now</span>
+        </a>
+        <a class="button button--ghost" href="#new-arrival" data-cursor="grow">
+          <span>Discover Collection</span>
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+  <section class="luxury-marquee" aria-label="Luxury brand highlights" data-marquee-reveal>
+    <div class="luxury-marquee__viewport">
+      <div class="luxury-marquee__track">
+        <div class="luxury-marquee__group" aria-hidden="false">
+          <span>FREE WORLDWIDE SHIPPING</span>
+          <span>&bull;</span>
+          <span>NEW SEASON 2026</span>
+          <span>&bull;</span>
+          <span>PREMIUM QUALITY</span>
+          <span>&bull;</span>
+          <span>LIMITED COLLECTION</span>
+          <span>&bull;</span>
+          <span>TIMELESS ELEGANCE</span>
+          <span>&bull;</span>
+          <span>HANDCRAFTED DETAILS</span>
+          <span>&bull;</span>
+          <span>EXCLUSIVE DESIGNS</span>
+          <span>&bull;</span>
+          <span>MODERN LUXURY</span>
+          <span>&bull;</span>
+          <span>FREE RETURNS</span>
+          <span>&bull;</span>
+        </div>
+        <div class="luxury-marquee__group" aria-hidden="true">
+          <span>FREE WORLDWIDE SHIPPING</span>
+          <span>&bull;</span>
+          <span>NEW SEASON 2026</span>
+          <span>&bull;</span>
+          <span>PREMIUM QUALITY</span>
+          <span>&bull;</span>
+          <span>LIMITED COLLECTION</span>
+          <span>&bull;</span>
+          <span>TIMELESS ELEGANCE</span>
+          <span>&bull;</span>
+          <span>HANDCRAFTED DETAILS</span>
+          <span>&bull;</span>
+          <span>EXCLUSIVE DESIGNS</span>
+          <span>&bull;</span>
+          <span>MODERN LUXURY</span>
+          <span>&bull;</span>
+          <span>FREE RETURNS</span>
+          <span>&bull;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vault-bridge" aria-labelledby="vault-bridge-title" data-vault-bridge>
+    <div class="vault-bridge__shell">
+      <figure class="vault-bridge__banner">
+        <img src="assets/images/banner-2.jpg" alt="LUXE boutique banner" loading="lazy">
+      </figure>
+
+      <div class="vault-bridge__inner arrivals-reveal" data-arrivals-reveal>
+        <p class="vault-bridge__eyebrow" data-letter-reveal>PRIVATE ARCHIVE</p>
+        <h2 class="vault-bridge__title" id="vault-bridge-title" data-letter-reveal>HOUSE OF LUXE</h2>
+        <p class="vault-bridge__copy" data-letter-reveal>
+          Crafted for those who appreciate timeless elegance, refined tailoring and modern luxury.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="arrivals" id="new-arrival" aria-label="New arrivals products">
+    <div class="arrivals__glow arrivals__glow--left" aria-hidden="true"></div>
+    <div class="arrivals__glow arrivals__glow--right" aria-hidden="true"></div>
+
+    <section class="collections-cinema" id="collections" aria-labelledby="collections-title" data-collections-cinema>
+      <div class="collections-cinema__hud" aria-hidden="true">
+        <div class="collections-cinema__hud-inner">
+          <span class="collections-cinema__active-number" data-collections-active-number>01</span>
+          <div class="collections-cinema__progress-track">
+            <span class="collections-cinema__progress-fill" data-collections-progress></span>
+          </div>
+          <div class="collections-cinema__chapter-links">
+            <a class="collections-cinema__chapter-link is-active" href="#men" data-collections-link data-index="0" data-cursor="grow">01 MEN</a>
+            <a class="collections-cinema__chapter-link" href="#women" data-collections-link data-index="1" data-cursor="grow">02 WOMEN</a>
+            <a class="collections-cinema__chapter-link" href="#accessories" data-collections-link data-index="2" data-cursor="grow">03 ACCESSORIES</a>
+            <a class="collections-cinema__chapter-link" href="#new-arrivals-edit" data-collections-link data-index="3" data-cursor="grow">04 NEW ARRIVALS</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="collections-cinema__chapters">
+        <article class="collection-chapter is-active" id="men" data-collection-chapter>
+          <div class="collection-chapter__backdrop" aria-hidden="true">
+            <video class="collection-chapter__backdrop-video" muted loop playsinline preload="metadata" data-collection-video>
+              <source src="assets/vault/men.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="collection-chapter__inner">
+            <div class="collection-chapter__content">
+              <p class="collection-chapter__number" data-collection-reveal>01</p>
+              <p class="collection-chapter__label" data-collection-reveal>MENSWEAR</p>
+              <h2 class="collection-chapter__title" id="collections-title" data-collection-reveal>MEN</h2>
+              <p class="collection-chapter__description" data-collection-reveal>Tailored silhouettes crafted for the modern icon.</p>
+              <a class="collection-chapter__cta" href="men.html" data-collection-reveal data-cursor="grow">
+                <span>Explore Collection</span>
+                <span class="collection-chapter__cta-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <div class="collection-chapter__media">
+              <div class="collection-chapter__media-shell" data-collection-media data-cursor="grow">
+                <video
+                  class="collection-chapter__video"
+                  muted
+                  loop
+                  playsinline
+                  webkit-playsinline="true"
+                  preload="metadata"
+                  data-collection-video
+                >
+                  <source src="assets/vault/men.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="collection-chapter" id="women" data-collection-chapter>
+          <div class="collection-chapter__backdrop" aria-hidden="true">
+            <video class="collection-chapter__backdrop-video" muted loop playsinline preload="metadata" data-collection-video>
+              <source src="assets/vault/women.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="collection-chapter__inner">
+            <div class="collection-chapter__content">
+              <p class="collection-chapter__number" data-collection-reveal>02</p>
+              <p class="collection-chapter__label" data-collection-reveal>WOMENSWEAR</p>
+              <h2 class="collection-chapter__title" data-collection-reveal>WOMEN</h2>
+              <p class="collection-chapter__description" data-collection-reveal>Refined movement shaped with precise elegance and quiet confidence.</p>
+              <a class="collection-chapter__cta" href="women.html" data-collection-reveal data-cursor="grow">
+                <span>Explore Collection</span>
+                <span class="collection-chapter__cta-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <div class="collection-chapter__media">
+              <div class="collection-chapter__media-shell" data-collection-media data-cursor="grow">
+                <video
+                  class="collection-chapter__video"
+                  muted
+                  loop
+                  playsinline
+                  webkit-playsinline="true"
+                  preload="metadata"
+                  data-collection-video
+                >
+                  <source src="assets/vault/women.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="collection-chapter" id="accessories" data-collection-chapter>
+          <div class="collection-chapter__backdrop" aria-hidden="true">
+            <video class="collection-chapter__backdrop-video" muted loop playsinline preload="metadata" data-collection-video>
+              <source src="assets/vault/accessories.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="collection-chapter__inner">
+            <div class="collection-chapter__content">
+              <p class="collection-chapter__number" data-collection-reveal>03</p>
+              <p class="collection-chapter__label" data-collection-reveal>ACCESSORIES</p>
+              <h2 class="collection-chapter__title" data-collection-reveal>ACCESSORIES</h2>
+              <p class="collection-chapter__description" data-collection-reveal>Objects of character designed to complete the silhouette with editorial restraint.</p>
+              <a class="collection-chapter__cta" href="accessories.html" data-collection-reveal data-cursor="grow">
+                <span>Explore Collection</span>
+                <span class="collection-chapter__cta-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <div class="collection-chapter__media">
+              <div class="collection-chapter__media-shell" data-collection-media data-cursor="grow">
+                <video
+                  class="collection-chapter__video"
+                  muted
+                  loop
+                  playsinline
+                  webkit-playsinline="true"
+                  preload="metadata"
+                  data-collection-video
+                >
+                  <source src="assets/vault/accessories.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="collection-chapter" id="new-arrivals-edit" data-collection-chapter>
+          <div class="collection-chapter__backdrop" aria-hidden="true">
+            <video class="collection-chapter__backdrop-video" muted loop playsinline preload="metadata" data-collection-video>
+              <source src="assets/vault/new-arrivals.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="collection-chapter__inner">
+            <div class="collection-chapter__content">
+              <p class="collection-chapter__number" data-collection-reveal>04</p>
+              <p class="collection-chapter__label" data-collection-reveal>NEW ARRIVALS</p>
+              <h2 class="collection-chapter__title" data-collection-reveal>NEW ARRIVALS</h2>
+              <p class="collection-chapter__description" data-collection-reveal>Fresh campaign energy cut with sculptural tailoring, clean volume and modern desirability.</p>
+              <a class="collection-chapter__cta" href="new-arrivals.html" data-collection-reveal data-cursor="grow">
+                <span>Explore Collection</span>
+                <span class="collection-chapter__cta-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <div class="collection-chapter__media">
+              <div class="collection-chapter__media-shell" data-collection-media data-cursor="grow">
+                <video
+                  class="collection-chapter__video"
+                  muted
+                  loop
+                  playsinline
+                  webkit-playsinline="true"
+                  preload="metadata"
+                  data-collection-video
+                >
+                  <source src="assets/vault/new-arrivals.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="collections-cinema__ending" id="collections-end">
+        <a class="collections-cinema__ending-button" href="men.html" data-cursor="grow">
+          <span>SHOP ALL COLLECTIONS</span>
+          <span class="collections-cinema__ending-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </section>
+  </section>
+
+  <section class="collections-transition" id="best-sellers" aria-label="Luxury transition" data-collections-transition>
+    <div class="collections-transition__media" aria-hidden="true">
+      <img class="collections-transition__image" src="assets/images/model.jpg" alt="">
+      <div class="collections-transition__overlay"></div>
+      <div class="collections-transition__grain"></div>
+      <div class="collections-transition__vignette"></div>
+    </div>
+
+    <div class="collections-transition__suit" data-collections-transition-suit aria-hidden="true">
+      <img src="assets/images/suit_-removebg-preview.png" alt="">
+    </div>
+
+    <a class="collections-transition__collections" href="#best-sellers-products" data-collections-transition-reveal data-cursor="grow">
+      <span>SHOP ALL COLLECTIONS</span>
+      <span class="collections-transition__collections-arrow" aria-hidden="true">&rarr;</span>
+    </a>
+
+    <div class="collections-transition__content">
+      <p class="collections-transition__eyebrow" data-collections-transition-reveal>BEST SELLERS</p>
+      <h2 class="collections-transition__heading" data-collections-transition-reveal>BEST<br>SELLERS</h2>
+      <p class="collections-transition__copy" data-collections-transition-reveal>OUR MOST LOVED PIECES, CHOSEN BY YOU.</p>
+      <a class="collections-transition__shop" href="#best-sellers-products" data-collections-transition-reveal data-cursor="grow">SHOP NOW</a>
+        <span class="collections-transition__link-arrow" aria-hidden="true">→</span>
+    </div>
+  </section>
+
+  <section class="luxury-promo luxury-promo--bs" aria-label="Luxury campaign banner" data-promo-reveal>
+    <div class="luxury-promo__panel">
+      <div class="luxury-promo__content">
+        <p class="luxury-promo__eyebrow">Private Members Sale</p>
+        <h2 class="luxury-promo__title">Limited Offer</h2>
+        <div class="luxury-promo__offer">
+          <span class="luxury-promo__percent">15% OFF</span>
+          <div class="luxury-promo__code">
+            <span>Use code</span>
+            <strong>LUXE15</strong>
+          </div>
+        </div>
+        <div class="luxury-promo__details">
+          <span>Free Worldwide Shipping</span>
+          <span>Members Get Early Access</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bs-section" id="best-sellers-products" data-bs-section>
+
+    <div class="bs-main" data-bs-main>
+      <div class="bs-container">
+        <div class="bs-column bs-column--left" data-bs-left>
+          <span class="bs-label" data-bs-label>BEST SELLER 01</span>
+          <h3 class="bs-name" data-bs-name>Obsidian Tailored Suit</h3>
+          <p class="bs-description" data-bs-description>Luxury formal collection refined with precise tailoring, deep structure and timeless evening confidence.</p>
+          
+          <div class="bs-pricing">
+            <span class="bs-price-current" data-bs-price>$980</span>
+            <span class="bs-price-old" data-bs-old-price>$1,240</span>
+            <span class="bs-discount" data-bs-discount>-21%</span>
+          </div>
+
+          <div class="bs-rating">
+            <span class="bs-stars">★★★★★</span>
+            <span class="bs-reviews" data-bs-reviews>24 Reviews</span>
+          </div>
+
+          <div class="bs-purchase-meta">
+            <div class="bs-option-group">
+              <span class="bs-option-label">Select Size</span>
+              <div class="bs-size-options" data-bs-sizes></div>
+            </div>
+
+            <div class="bs-option-group">
+              <span class="bs-option-label">Select Color</span>
+              <div class="bs-color-options" data-bs-colors></div>
+            </div>
+
+            <div class="bs-option-group bs-option-group--inline">
+              <span class="bs-option-label">Quantity</span>
+              <div class="bs-quantity-selector" data-bs-quantity></div>
+            </div>
+
+            <p class="bs-delivery" data-bs-delivery>Estimated Delivery: 3-7 Business Days</p>
+            <a class="bs-size-guide" href="#" data-bs-size-guide data-cursor="grow">View Size Guide</a>
+            <ul class="bs-details" data-bs-details></ul>
+          </div>
+
+          <div class="bs-actions">
+            <button class="bs-btn bs-btn--primary" data-cursor="grow">Add To Cart</button>
+            <div class="bs-actions__row">
+              <button class="bs-btn bs-btn--glass" data-bs-buy-now data-cursor="grow">Buy Now</button>
+              <button class="bs-btn bs-btn--glass" data-bs-quick-view data-cursor="grow">Quick View</button>
+            </div>
+            <div class="bs-actions__row">
+              <button class="best-sellers__wishlist" type="button" data-bs-wishlist data-cursor="grow" aria-label="Add best seller to wishlist">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="bs-badges">
+            <div class="bs-badge">
+              <span class="bs-badge__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M3 8.5h11v7H3z"></path><path d="M14 10h3.6l2.4 2.6v2.9H14z"></path><circle cx="7.3" cy="18" r="1.5"></circle><circle cx="17.2" cy="18" r="1.5"></circle></svg>
+              </span>
+              <span data-bs-feature="0">Free Worldwide Shipping</span>
+            </div>
+            <div class="bs-badge">
+              <span class="bs-badge__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 7.5h10"></path><path d="M7 12h8"></path><path d="M7 16.5h6"></path><path d="M18 5v4h-4"></path><path d="M18 9a7 7 0 1 1-2.1-5"></path></svg>
+              </span>
+              <span data-bs-feature="1">30-Day Returns</span>
+            </div>
+            <div class="bs-badge">
+              <span class="bs-badge__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.8 18.2 6v5.6c0 3.7-2.2 6.3-6.2 8.6-4-2.3-6.2-4.9-6.2-8.6V6z"></path><path d="m9.4 12.2 1.8 1.9 3.5-3.8"></path></svg>
+              </span>
+              <span data-bs-feature="2">2-Year Warranty</span>
+            </div>
+            <div class="bs-badge">
+              <span class="bs-badge__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5.5 7.5c2.5-2.6 10.5-2.6 13 0"></path><path d="M4.8 12c2.9-2.2 11.5-2.2 14.4 0"></path><path d="M6.2 16.2c2.2-1.6 9.4-1.6 11.6 0"></path></svg>
+              </span>
+              <span data-bs-feature="3">Premium Materials</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bs-column bs-column--center">
+          <div class="bs-hero" data-bs-hero>
+            <div class="bs-hero__glow"></div>
+            <div class="bs-hero__reflection"></div>
+            <div class="bs-hero__wrapper" data-bs-wrapper>
+              <img src="assets/images/suit_-removebg-preview.png" alt="" class="bs-hero__img" data-bs-image>
+            </div>
+          </div>
+        </div>
+
+        <div class="bs-column bs-column--right">
+          <div class="bs-preview bs-preview--prev" data-bs-prev-preview>
+            <img src="assets/images/bant-removebg-preview.png" alt="" class="bs-preview__img">
+          </div>
+          <div class="bs-preview bs-preview--next" data-bs-next-preview>
+            <img src="assets/images/shirt-removebg-preview.png" alt="" class="bs-preview__img">
+          </div>
+        </div>
+      </div>
+
+      <div class="bs-ui">
+        <div class="bs-numbers" data-bs-numbers>
+          <span class="bs-number is-active" data-index="0">01</span>
+          <span class="bs-number" data-index="1">02</span>
+          <span class="bs-number" data-index="2">03</span>
+          <span class="bs-number" data-index="3">04</span>
+          <span class="bs-number" data-index="4">05</span>
+          <span class="bs-number" data-index="5">06</span>
+        </div>
+
+        <div class="bs-nav-btns">
+          <button class="bs-nav-btn bs-nav-btn--prev" data-bs-prev data-cursor="grow">
+            <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" /></svg>
+          </button>
+          <button class="bs-nav-btn bs-nav-btn--next" data-bs-next data-cursor="grow">
+            <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6" /></svg>
+          </button>
+        </div>
+
+        <div class="bs-progress-wrap">
+          <div class="bs-progress-track">
+            <div class="bs-progress-bar" data-bs-progress></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ref-section" aria-label="Editorial selection" data-ref-section>
+    <div class="ref-section__shell">
+      <div class="ref-logo-strip" aria-label="Luxury brand logos" data-ref-animate>
+        <div class="ref-logo-strip__item"><img src="assets/images/dior_brand-removebg-preview.png" alt="Dior"></div>
+        <div class="ref-logo-strip__item"><img src="assets/images/prada_brand-removebg-preview.png" alt="Prada"></div>
+        <div class="ref-logo-strip__item"><img src="assets/images/gucci_brand-removebg-preview.png" alt="Gucci"></div>
+        <div class="ref-logo-strip__item"><img src="assets/images/Louis_Vuitton_brand-removebg-preview.png" alt="Louis Vuitton"></div>
+        <div class="ref-logo-strip__item"><img src="assets/images/chanel_brand-removebg-preview.png" alt="Chanel"></div>
+        <div class="ref-logo-strip__item"><img src="assets/images/polo_brand-removebg-preview.png" alt="Polo"></div>
+      </div>
+
+      <div class="ref-stats" aria-label="Luxury highlights">
+        <article class="ref-stat" data-ref-stat>
+          <span class="ref-stat__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 4 6.2 7.4l1.4 6.9L12 19l4.4-4.7 1.4-6.9L12 4Z"></path><path d="M8.2 9.1 12 6.8l3.8 2.3"></path></svg>
+          </span>
+          <strong class="ref-stat__value" data-ref-stat-value data-value="120" data-suffix="+">0</strong>
+          <span class="ref-stat__label">Limited Releases</span>
+          <span class="ref-stat__meta">Exclusive drops every month</span>
+        </article>
+        <article class="ref-stat" data-ref-stat>
+          <span class="ref-stat__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.8 7.1 9l.9 6.7L12 20.2l4-4.5.9-6.7L12 3.8Z"></path><path d="m9.3 10.5 2.7-2.9 2.7 2.9"></path></svg>
+          </span>
+          <strong class="ref-stat__value" data-ref-stat-value data-value="25" data-suffix="+">0</strong>
+          <span class="ref-stat__label">Luxury Brands</span>
+          <span class="ref-stat__meta">Curated from the world's best</span>
+        </article>
+        <article class="ref-stat" data-ref-stat>
+          <span class="ref-stat__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16"></path><path d="M6.6 6.8 17.4 17.2"></path><path d="M17.4 6.8 6.6 17.2"></path></svg>
+          </span>
+          <strong class="ref-stat__value" data-ref-stat-value data-value="49" data-suffix="+">0</strong>
+          <span class="ref-stat__label">Exclusive Drops</span>
+          <span class="ref-stat__meta">New arrivals, limited stock</span>
+        </article>
+        <article class="ref-stat" data-ref-stat>
+          <span class="ref-stat__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.6 18 6v5.8c0 3.8-2.3 6.5-6 8.6-3.7-2.1-6-4.8-6-8.6V6l6-2.4Z"></path><path d="m9.2 11.9 1.9 2 3.7-4"></path></svg>
+          </span>
+          <strong class="ref-stat__value" data-ref-stat-value data-value="100" data-suffix="%">0</strong>
+          <span class="ref-stat__label">Authentication</span>
+          <span class="ref-stat__meta">Guaranteed original products</span>
+        </article>
+      </div>
+
+      <div class="ref-section__heading">
+        <p class="ref-section__eyebrow" data-ref-animate>Shop Our Collection</p>
+        <h2 class="ref-section__title" data-ref-animate>Editorial Selection</h2>
+      </div>
+
+      <div class="ref-tabs" role="tablist" aria-label="Editorial categories" data-ref-animate>
+        <button class="ref-tabs__button is-active" type="button" role="tab" aria-selected="true" data-ref-tab data-category-target="all">All</button>
+        <button class="ref-tabs__button" type="button" role="tab" aria-selected="false" data-ref-tab data-category-target="suits">Suits</button>
+        <button class="ref-tabs__button" type="button" role="tab" aria-selected="false" data-ref-tab data-category-target="jackets">Jackets</button>
+        <button class="ref-tabs__button" type="button" role="tab" aria-selected="false" data-ref-tab data-category-target="shirts">Shirts</button>
+        <button class="ref-tabs__button" type="button" role="tab" aria-selected="false" data-ref-tab data-category-target="pants">Pants</button>
+        <button class="ref-tabs__button" type="button" role="tab" aria-selected="false" data-ref-tab data-category-target="shoes">Shoes</button>
+        <button class="ref-tabs__button" type="button" role="tab" aria-selected="false" data-ref-tab data-category-target="accessories">Accessories</button>
+        <button class="ref-tabs__button" type="button" role="tab" aria-selected="false" data-ref-tab data-category-target="bags">Bags</button>
+      </div>
+
+      <div class="ref-grid" data-ref-grid>
+        <article class="ref-product-card" data-ref-card data-category="suits">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Wool Tailored Suit to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/men_suit_black-removebg-preview.png" alt="Wool Tailored Suit"></div>
+          <div class="ref-product-card__swatches" aria-label="Suit color options"><span style="--swatch:#0b0b0d"></span><span style="--swatch:#423934"></span><span style="--swatch:#746a62"></span></div>
+          <div class="ref-product-card__details"><h3>Wool Tailored Suit</h3><p>Premium Wool</p><strong>$1,280</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="suits">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Pinstripe Suit to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/men_suit_gray-removebg-preview.png" alt="Pinstripe Suit" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Suit color options"><span style="--swatch:#5f6166"></span><span style="--swatch:#1f2024"></span><span style="--swatch:#d0d2d6"></span></div>
+          <div class="ref-product-card__details"><h3>Pinstripe Suit</h3><p>Wool Blend</p><strong>$1,180</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="suits">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Linen Blend Suit to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/men_suit_beige-removebg-preview.png" alt="Linen Blend Suit" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Suit color options"><span style="--swatch:#d0b99a"></span><span style="--swatch:#8a6f59"></span><span style="--swatch:#efe5d7"></span></div>
+          <div class="ref-product-card__details"><h3>Linen Blend Suit</h3><p>Linen &amp; Cotton</p><strong>$1,150</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="jackets">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Leather Jacket to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/men_jacket_black-removebg-preview.png" alt="Leather Jacket" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Jacket color options"><span style="--swatch:#090909"></span><span style="--swatch:#4b4038"></span><span style="--swatch:#6f5a46"></span></div>
+          <div class="ref-product-card__details"><h3>Leather Jacket</h3><p>Genuine Leather</p><strong>$980</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="jackets">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Suede Jacket to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/men_jacket_brown-removebg-preview.png" alt="Suede Jacket" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Jacket color options"><span style="--swatch:#5b2c14"></span><span style="--swatch:#9c6332"></span><span style="--swatch:#d6ad7d"></span></div>
+          <div class="ref-product-card__details"><h3>Suede Jacket</h3><p>Premium Suede</p><strong>$990</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="jackets">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Bomber Jacket to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/men_jacket_olive-removebg-preview.png" alt="Bomber Jacket" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Jacket color options"><span style="--swatch:#5a6241"></span><span style="--swatch:#2f3626"></span><span style="--swatch:#92886a"></span></div>
+          <div class="ref-product-card__details"><h3>Bomber Jacket</h3><p>Nylon Blend</p><strong>$690</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="shirts">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add White Pique Polo Shirt to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/t_shirt_white-removebg-preview.png" alt="Pique Polo Shirt in white" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Shirt color options"><span style="--swatch:#ede7de"></span><span style="--swatch:#99918b"></span><span style="--swatch:#2e2d31"></span></div>
+          <div class="ref-product-card__details"><h3>Pique Polo Shirt</h3><p>Cotton Pique</p><strong>$120</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="shirts">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Black Pique Polo Shirt to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/t_shirt_black-removebg-preview.png" alt="Pique Polo Shirt in black" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Shirt color options"><span style="--swatch:#0f1012"></span><span style="--swatch:#4e5256"></span><span style="--swatch:#988d84"></span></div>
+          <div class="ref-product-card__details"><h3>Pique Polo Shirt</h3><p>Cotton Pique</p><strong>$120</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="shirts">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Beige Pique Polo Shirt to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/t_shirt_beige-removebg-preview.png" alt="Pique Polo Shirt in beige" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Shirt color options"><span style="--swatch:#d6c0a7"></span><span style="--swatch:#a68c72"></span><span style="--swatch:#f0e1cf"></span></div>
+          <div class="ref-product-card__details"><h3>Pique Polo Shirt</h3><p>Cotton Pique</p><strong>$120</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="pants">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Tailored Trousers to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/pant_black-removebg-preview.png" alt="Tailored Trousers" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Trouser color options"><span style="--swatch:#0c0c0d"></span><span style="--swatch:#4e4a45"></span><span style="--swatch:#b7ada3"></span></div>
+          <div class="ref-product-card__details"><h3>Tailored Trousers</h3><p>Wool Blend</p><strong>$420</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="pants">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Pleated Trousers to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/pant_gray-removebg-preview.png" alt="Pleated Trousers" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Trouser color options"><span style="--swatch:#7a7a7a"></span><span style="--swatch:#2d2f34"></span><span style="--swatch:#cbc5bb"></span></div>
+          <div class="ref-product-card__details"><h3>Pleated Trousers</h3><p>Wool Blend</p><strong>$420</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="pants">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Classic Trousers to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/pant_navy-removebg-preview.png" alt="Classic Trousers" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Trouser color options"><span style="--swatch:#162033"></span><span style="--swatch:#657288"></span><span style="--swatch:#1d1b24"></span></div>
+          <div class="ref-product-card__details"><h3>Classic Trousers</h3><p>Wool Blend</p><strong>$420</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="shoes">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Leather Loafers to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/shoes_black-removebg-preview.png" alt="Leather Loafers in black" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Shoe color options"><span style="--swatch:#0a0b0d"></span><span style="--swatch:#483b31"></span><span style="--swatch:#b88a5a"></span></div>
+          <div class="ref-product-card__details"><h3>Leather Loafers</h3><p>Italian Leather</p><strong>$550</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="shoes">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Leather Loafers in brown to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/shoes_brown-removebg-preview.png" alt="Leather Loafers in brown" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Shoe color options"><span style="--swatch:#5c3522"></span><span style="--swatch:#8a5132"></span><span style="--swatch:#c79967"></span></div>
+          <div class="ref-product-card__details"><h3>Leather Loafers</h3><p>Italian Leather</p><strong>$550</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="accessories">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Square Sunglasses to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/sunglasses_black-removebg-preview.png" alt="Square Sunglasses in black" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Accessory color options"><span style="--swatch:#0d0d0e"></span><span style="--swatch:#4b4742"></span><span style="--swatch:#a59179"></span></div>
+          <div class="ref-product-card__details"><h3>Square Sunglasses</h3><p>Acetate Frame</p><strong>$260</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="accessories">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Tortoise Sunglasses to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/sunglasses_brown-removebg-preview.png" alt="Square Sunglasses in brown" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Accessory color options"><span style="--swatch:#482a1a"></span><span style="--swatch:#8a5535"></span><span style="--swatch:#d5b082"></span></div>
+          <div class="ref-product-card__details"><h3>Square Sunglasses</h3><p>Acetate Frame</p><strong>$260</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="accessories">
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Metal Sunglasses to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/sunglasses_silver-removebg-preview.png" alt="Metal Sunglasses" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Accessory color options"><span style="--swatch:#c5c5c5"></span><span style="--swatch:#767676"></span><span style="--swatch:#111217"></span></div>
+          <div class="ref-product-card__details"><h3>Metal Sunglasses</h3><p>Stainless Steel</p><strong>$240</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="bags" data-default-hidden="true" hidden>
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Executive Backpack to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/bags_black-removebg-preview.png" alt="Executive Backpack" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Bag color options"><span style="--swatch:#0b0b0c"></span><span style="--swatch:#4c321d"></span><span style="--swatch:#2d3228"></span></div>
+          <div class="ref-product-card__details"><h3>Executive Backpack</h3><p>Full-Grain Leather</p><strong>$620</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="bags" data-default-hidden="true" hidden>
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Weekend Holdall to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/bags_2-removebg-preview.png" alt="Weekend Holdall" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Bag color options"><span style="--swatch:#0f1012"></span><span style="--swatch:#5e4026"></span><span style="--swatch:#32392b"></span></div>
+          <div class="ref-product-card__details"><h3>Weekend Holdall</h3><p>Pebbled Leather</p><strong>$540</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="bags" data-default-hidden="true" hidden>
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Metropolitan Tote to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/bags_3-removebg-preview.png" alt="Metropolitan Tote" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Bag color options"><span style="--swatch:#111111"></span><span style="--swatch:#66462d"></span><span style="--swatch:#3c4738"></span></div>
+          <div class="ref-product-card__details"><h3>Metropolitan Tote</h3><p>Matte Finish</p><strong>$480</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="bags" data-default-hidden="true" hidden>
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add Travel Duffle to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/bags_4-removebg-preview.png" alt="Travel Duffle" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Bag color options"><span style="--swatch:#111214"></span><span style="--swatch:#5c4125"></span><span style="--swatch:#4c5648"></span></div>
+          <div class="ref-product-card__details"><h3>Travel Duffle</h3><p>Structured Leather</p><strong>$710</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+        <article class="ref-product-card" data-ref-card data-category="bags" data-default-hidden="true" hidden>
+          <button class="ref-product-card__wishlist" type="button" aria-label="Add City Briefcase to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          <div class="ref-product-card__media"><img src="assets/images/bags_5-removebg-preview.png" alt="City Briefcase" loading="lazy"></div>
+          <div class="ref-product-card__swatches" aria-label="Bag color options"><span style="--swatch:#0b0d10"></span><span style="--swatch:#67452a"></span><span style="--swatch:#39423a"></span></div>
+          <div class="ref-product-card__details"><h3>City Briefcase</h3><p>Reinforced Leather</p><strong>$590</strong></div>
+          <div class="ref-product-card__actions"><button class="ref-product-card__button ref-product-card__button--ghost" type="button" data-cursor="grow">Quick View</button><button class="ref-product-card__button ref-product-card__button--gold" type="button" data-cursor="grow">Add To Cart <span>+</span></button></div>
+        </article>
+      </div>
+
+      <section class="ref-featured" aria-label="Featured executive leather backpack" data-ref-animate>
+        <div class="ref-featured__gallery">
+          <div class="ref-featured__thumbs" role="list" aria-label="Backpack gallery">
+            <button class="ref-featured__thumb is-active" type="button" role="listitem" data-ref-thumb data-image="assets/images/bags_black-removebg-preview.png" data-label="Front View" data-counter="01 / 05" aria-label="Show backpack front view" data-cursor="grow"><img src="assets/images/bags_black-removebg-preview.png" alt="Backpack front view"></button>
+            <button class="ref-featured__thumb" type="button" role="listitem" data-ref-thumb data-image="assets/images/bags_2-removebg-preview.png" data-label="Three Quarter View" data-counter="02 / 05" aria-label="Show backpack three quarter view" data-cursor="grow"><img src="assets/images/bags_2-removebg-preview.png" alt="Backpack three quarter view" loading="lazy"></button>
+            <button class="ref-featured__thumb" type="button" role="listitem" data-ref-thumb data-image="assets/images/bags_3-removebg-preview.png" data-label="Back Panel" data-counter="03 / 05" aria-label="Show backpack back panel" data-cursor="grow"><img src="assets/images/bags_3-removebg-preview.png" alt="Backpack back view" loading="lazy"></button>
+            <button class="ref-featured__thumb" type="button" role="listitem" data-ref-thumb data-image="assets/images/bags_4-removebg-preview.png" data-label="Open Interior" data-counter="04 / 05" aria-label="Show backpack interior" data-cursor="grow"><img src="assets/images/bags_4-removebg-preview.png" alt="Backpack interior view" loading="lazy"></button>
+            <button class="ref-featured__thumb" type="button" role="listitem" data-ref-thumb data-image="assets/images/bags_5-removebg-preview.png" data-label="Detail Shot" data-counter="05 / 05" aria-label="Show backpack detail shot" data-cursor="grow"><img src="assets/images/bags_5-removebg-preview.png" alt="Backpack detail view" loading="lazy"></button>
+          </div>
+          <div class="ref-featured__stage">
+            <div class="ref-featured__stage-frame">
+              <button class="ref-featured__expand" type="button" aria-label="Expand backpack preview" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M14 5h5v5"></path><path d="M19 5 13 11"></path></svg></button>
+              <div class="ref-featured__stage-glow"></div>
+              <img src="assets/images/bags_black-removebg-preview.png" alt="Executive leather backpack" data-ref-stage-image>
+              <div class="ref-featured__stage-meta"><span data-ref-stage-label>Front View</span><span data-ref-stage-counter>01 / 05</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="ref-featured__content">
+          <p class="ref-featured__eyebrow">Featured Collection</p>
+          <h3 class="ref-featured__title">Executive Leather Backpack</h3>
+          <p class="ref-featured__description">Crafted from premium full-grain leather, designed for modern professionals who value style, functionality and timeless elegance.</p>
+          <div class="ref-featured__price">$620</div>
+          <div class="ref-featured__color"><span>Color: Black</span><div class="ref-featured__swatches" aria-label="Backpack colors"><span style="--swatch:#0a0a0a"></span><span style="--swatch:#4c2e18"></span><span style="--swatch:#2d322a"></span></div></div>
+          <div class="ref-featured__actions">
+            <button class="ref-featured__button ref-featured__button--gold" type="button" data-cursor="grow">Add To Cart</button>
+            <button class="ref-featured__button ref-featured__button--ghost" type="button" data-cursor="grow">Buy Now</button>
+            <button class="ref-featured__wish" type="button" aria-label="Add Executive Leather Backpack to wishlist" data-cursor="grow"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7-4.35-7-10.03C5 7.4 7.24 5.5 9.88 5.5c1.57 0 2.76.73 3.12 1.35.36-.62 1.55-1.35 3.12-1.35C18.76 5.5 21 7.4 21 10.47 21 16.15 14 20.5 14 20.5H12Z"></path></svg></button>
+          </div>
+          <div class="ref-featured__benefits" aria-label="Shipping and materials">
+            <div class="ref-featured__benefit"><svg viewBox="0 0 24 24" fill="none"><path d="M3 14h11"></path><path d="M14 8h3l4 4v2h-7Z"></path><circle cx="7" cy="17" r="2"></circle><circle cx="18" cy="17" r="2"></circle></svg><span>Free Worldwide Shipping</span></div>
+            <div class="ref-featured__benefit"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3.6 18 6v5.8c0 3.8-2.3 6.5-6 8.6-3.7-2.1-6-4.8-6-8.6V6l6-2.4Z"></path><path d="m9.2 11.9 1.9 2 3.7-4"></path></svg><span>2 Year Warranty</span></div>
+            <div class="ref-featured__benefit"><svg viewBox="0 0 24 24" fill="none"><path d="M6 17.5h12"></path><path d="M8 17.5 6.5 9.2a2 2 0 0 1 2-2.3h7a2 2 0 0 1 2 2.3L16 17.5"></path><path d="M9.2 6.9a2.8 2.8 0 1 1 5.6 0"></path></svg><span>Premium Materials</span></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--
+    <div class="ref-section__frame">
+      <div class="ref-section__header">
+        <p class="ref-section__eyebrow" data-ref-animate>Private Collection</p>
+        <h2 class="ref-section__title" data-ref-animate>Editorial Selection</h2>
+      </div>
+
+      <div class="ref-marquee" aria-label="Featured luxury houses" data-ref-animate>
+        <div class="ref-marquee__track">
+          <div class="ref-marquee__group">
+            <span class="ref-logo-mark ref-logo-mark--xl">MONO</span>
+            <span class="ref-logo-mark ref-logo-mark--lg">AUREL</span>
+            <span class="ref-logo-mark ref-logo-mark--sm">VANTA</span>
+            <span class="ref-logo-mark ref-logo-mark--md">NOBLE</span>
+            <span class="ref-logo-mark ref-logo-mark--lg">ARCHÉ</span>
+            <span class="ref-logo-mark ref-logo-mark--sm">CROWN</span>
+          </div>
+          <div class="ref-marquee__group" aria-hidden="true">
+            <span class="ref-logo-mark ref-logo-mark--xl">MONO</span>
+            <span class="ref-logo-mark ref-logo-mark--lg">AUREL</span>
+            <span class="ref-logo-mark ref-logo-mark--sm">VANTA</span>
+            <span class="ref-logo-mark ref-logo-mark--md">NOBLE</span>
+            <span class="ref-logo-mark ref-logo-mark--lg">ARCHÉ</span>
+            <span class="ref-logo-mark ref-logo-mark--sm">CROWN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ref-stats" aria-label="Luxury highlights">
+        <article class="ref-stat" data-ref-stat>
+          <span class="ref-stat__icon" aria-hidden="true">✦</span>
+          <div class="ref-stat__content">
+            <strong class="ref-stat__value" data-ref-stat-value data-value="18">0</strong>
+            <span class="ref-stat__description">crafted in</span>
+            <span class="ref-stat__suffix">countries</span>
+          </div>
+        </article>
+        <article class="ref-stat" data-ref-stat>
+          <span class="ref-stat__icon" aria-hidden="true">✧</span>
+          <div class="ref-stat__content">
+            <strong class="ref-stat__value" data-ref-stat-value data-value="12">0</strong>
+            <span class="ref-stat__description">materials</span>
+            <span class="ref-stat__suffix">finishes</span>
+          </div>
+        </article>
+        <article class="ref-stat" data-ref-stat>
+          <span class="ref-stat__icon" aria-hidden="true">◌</span>
+          <div class="ref-stat__content">
+            <strong class="ref-stat__value" data-ref-stat-value data-value="96">0</strong>
+            <span class="ref-stat__description">members</span>
+            <span class="ref-stat__suffix">private</span>
+          </div>
+        </article>
+        <article class="ref-stat" data-ref-stat>
+          <span class="ref-stat__icon" aria-hidden="true">⟡</span>
+          <div class="ref-stat__content">
+            <strong class="ref-stat__value" data-ref-stat-value data-value="48">0</strong>
+            <span class="ref-stat__description">dispatch</span>
+            <span class="ref-stat__suffix">hours</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="ref-showcase">
+        <div class="ref-showcase__hero">
+          <div class="ref-showcase__hero-card" data-ref-hero>
+            <div class="ref-showcase__hero-badge">New</div>
+            <div class="ref-showcase__hero-tag">Made in Italy</div>
+            <div class="ref-showcase__hero-media">
+              <img src="assets/images/suit_-removebg-preview.png" alt="Luxury editorial product placeholder">
+            </div>
+            <div class="ref-showcase__hero-copy">
+              <div class="ref-showcase__hero-pills">
+                <span class="ref-showcase__hero-pill">Exclusive</span>
+                <span class="ref-showcase__hero-pill ref-showcase__hero-pill--soft">Limited</span>
+              </div>
+              <h3>Monarch Tailored Set</h3>
+              <p>Soft structure, quiet confidence, premium craftsmanship.</p>
+              <span>From $1,280</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ref-showcase__stack">
+          <article class="ref-product-card" data-ref-card>
+            <div class="ref-product-card__media">
+              <img src="assets/images/shirt-removebg-preview.png" alt="Luxury shirt placeholder">
+            </div>
+            <div class="ref-product-card__copy">
+              <span class="ref-product-card__meta">Limited</span>
+              <span class="ref-product-card__name">Crestline Shirt</span>
+              <span class="ref-product-card__price">$340</span>
+            </div>
+          </article>
+
+          <article class="ref-product-card" data-ref-card>
+            <div class="ref-product-card__media">
+              <img src="assets/images/bant-removebg-preview.png" alt="Luxury trouser placeholder">
+            </div>
+            <div class="ref-product-card__copy">
+              <span class="ref-product-card__meta">Exclusive</span>
+              <span class="ref-product-card__name">Noir Trousers</span>
+              <span class="ref-product-card__price">$420</span>
+            </div>
+          </article>
+
+          <article class="ref-product-card" data-ref-card>
+            <div class="ref-product-card__media">
+              <img src="assets/images/black_dress-removebg-preview.png" alt="Luxury evening placeholder">
+            </div>
+            <div class="ref-product-card__copy">
+              <span class="ref-product-card__meta">New</span>
+              <span class="ref-product-card__name">Midnight Dress</span>
+              <span class="ref-product-card__price">$960</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    -->
+  </section>
+
+  <section class="final-cinema" aria-label="The House of Luxe" data-final-cinema>
+    <div class="final-cinema__media" aria-hidden="true">
+      <video
+        class="final-cinema__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        webkit-playsinline="true"
+        preload="auto"
+        poster="assets/images/banner-2.jpg"
+      >
+        <source src="assets/video/سيما.mp4" type="video/mp4">
+      </video>
+      <div class="final-cinema__overlay"></div>
+      <div class="final-cinema__vignette"></div>
+      <div class="final-cinema__grain"></div>
+    </div>
+
+    <div class="final-cinema__content">
+      <p class="final-cinema__eyebrow" data-final-cinema-reveal>PRIVATE ARCHIVE</p>
+      <h2 class="final-cinema__title" data-final-cinema-reveal>THE HOUSE OF LUXE</h2>
+      <p class="final-cinema__copy" data-final-cinema-reveal>Crafted for those who appreciate timeless elegance, refined silhouettes and modern luxury.</p>
+      <a class="final-cinema__button" href="#collections" data-final-cinema-reveal data-cursor="grow">
+        <span>EXPLORE COLLECTION</span>
+        <span class="final-cinema__button-arrow" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer-luxe" aria-label="LUXE footer" data-footer-luxe>
+    <div class="site-footer-luxe__shell">
+      <div class="site-footer-luxe__top">
+        <div class="site-footer-luxe__brand">
+          <a class="site-footer-luxe__logo" href="#home" data-cursor="grow">LUXE</a>
+          <p class="site-footer-luxe__brand-copy">Timeless pieces crafted with precision and passion.</p>
+          <div class="site-footer-luxe__social" aria-label="Social links">
+            <a class="site-footer-luxe__social-link" href="https://www.instagram.com/_kimokono112?igsh=Ync5ZGliaG10cW40" target="_blank" rel="noreferrer" aria-label="Instagram" data-cursor="grow">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5"></rect><circle cx="12" cy="12" r="4.1"></circle><circle cx="17.3" cy="6.8" r="1"></circle></svg>
+            </a>
+            <a class="site-footer-luxe__social-link" href="https://www.facebook.com/share/1ExtecZon8/" target="_blank" rel="noreferrer" aria-label="Facebook" data-cursor="grow">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.2 20V12.7h2.5l.4-3h-2.9V7.8c0-.9.3-1.5 1.6-1.5h1.5V3.6c-.3 0-1.1-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.9v2.2H9v3h2.4V20h2.8Z"></path></svg>
+            </a>
+            <button class="site-footer-luxe__social-link" type="button" aria-label="TikTok" data-cursor="grow">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14.6 4.1c.5 1.5 1.5 2.7 2.9 3.4a5.9 5.9 0 0 0 2.1.6v2.7a8.1 8.1 0 0 1-3.2-.8v5.2a5.4 5.4 0 1 1-5.4-5.4c.3 0 .7 0 1 .1v2.8a2.8 2.8 0 1 0 1.8 2.6V4.1h2.8Z"></path></svg>
+            </button>
+            <button class="site-footer-luxe__social-link" type="button" aria-label="Pinterest" data-cursor="grow">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-3.1 16.4l1.1-4.2c-.3-.7-.5-1.7-.5-2.5 0-2.3 1.3-4 3.1-4 1.5 0 2.2 1.1 2.2 2.4 0 1.5-.9 3.7-1.4 5.8-.4 1.8 1 3.2 2.8 3.2 3.3 0 5.5-3 5.5-6.6 0-2.7-1.8-5.9-6.3-5.9-4.6 0-7.4 3.4-7.4 7.1 0 1.3.4 2.3 1 3.1.3.3.3.4.2.8l-.3 1.1c-.1.4-.4.5-.8.4-2.2-.9-3.2-3.2-3.2-5.8 0-4.3 3.6-9.4 10.8-9.4 5.8 0 9.6 4.2 9.6 8.7 0 5.9-3.3 10.3-8.1 10.3-1.6 0-3.1-.8-3.6-1.8l-1 3.9c-.4 1.5-1.1 2.9-1.8 4.1"></path></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="site-footer-luxe__columns">
+          <div class="site-footer-luxe__column">
+            <h3>Shop</h3>
+            <a href="men.html" data-cursor="grow">Men</a>
+            <a href="women.html" data-cursor="grow">Women</a>
+            <a href="accessories.html" data-cursor="grow">Accessories</a>
+            <a href="new-arrivals.html" data-cursor="grow">New Arrivals</a>
+            <a href="#best-sellers" data-cursor="grow">Best Sellers</a>
+          </div>
+
+          <div class="site-footer-luxe__column">
+            <h3>Company</h3>
+            <a href="#about" data-cursor="grow">About Us</a>
+            <a href="#about" data-cursor="grow">Our Story</a>
+            <a href="#home" data-cursor="grow">Careers</a>
+            <a href="#collections" data-cursor="grow">Sustainability</a>
+            <a href="#home" data-cursor="grow">Press</a>
+          </div>
+
+          <div class="site-footer-luxe__column">
+            <h3>Customer Care</h3>
+            <a href="#home" data-cursor="grow">Contact Us</a>
+            <a href="#home" data-cursor="grow">Shipping</a>
+            <a href="#home" data-cursor="grow">Returns &amp; Exchanges</a>
+            <a href="#home" data-cursor="grow">FAQ</a>
+            <a href="#home" data-cursor="grow">Size Guide</a>
+          </div>
+
+          <div class="site-footer-luxe__column">
+            <h3>Legal</h3>
+            <a href="#home" data-cursor="grow">Privacy Policy</a>
+            <a href="#home" data-cursor="grow">Terms of Service</a>
+            <a href="#home" data-cursor="grow">Refund Policy</a>
+            <a href="#home" data-cursor="grow">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer-luxe__bottom">
+        <p>&copy; 2026 LUXE - Crafted with timeless elegance.</p>
+        <p>United States <span>|</span> USD</p>
+      </div>
+
+      <p class="site-footer-luxe__credit">Powered by <a href="https://karimaly.com" target="_blank" rel="noreferrer" data-cursor="grow">Karim Aly</a></p>
+    </div>
+  </footer>
+
+  <div class="search-overlay" data-search-overlay aria-hidden="true">
+    <div class="search-overlay__backdrop" data-search-close></div>
+
+    <div class="search-overlay__panel" role="dialog" aria-modal="true" aria-labelledby="search-overlay-title">
+      <button class="search-overlay__close" type="button" data-search-close data-cursor="grow" aria-label="Close search overlay">
+        <span class="search-overlay__close-copy">ESC</span>
+        <span class="search-overlay__close-copy search-overlay__close-copy--muted">TO CLOSE</span>
+        <span class="search-overlay__close-icon" aria-hidden="true">&times;</span>
+      </button>
+
+      <img class="search-overlay__figure" src="assets/images/men_5-removebg-preview.png" alt="" aria-hidden="true">
+
+      <div class="search-overlay__top">
+        <div class="search-overlay__intro">
+          <h2 class="search-overlay__title" id="search-overlay-title">SEARCH</h2>
+        </div>
+
+        <label class="search-overlay__input-shell" for="search-overlay-input">
+          <span class="search-overlay__input-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5"></circle><path d="M16 16L21 21"></path></svg>
+          </span>
+          <input class="search-overlay__input" id="search-overlay-input" type="search" placeholder="Search products..." autocomplete="off" data-search-input>
+          <button class="search-overlay__clear" type="button" data-search-clear data-cursor="grow" aria-label="Clear search">&times;</button>
+        </label>
+      </div>
+
+      <div class="search-overlay__body">
+        <aside class="search-overlay__sidebar">
+          <section class="search-overlay__group">
+            <h3 class="search-overlay__section-title">POPULAR SEARCHES</h3>
+            <div class="search-overlay__popular-list">
+              <button class="search-overlay__popular-item" type="button" data-search-term="Suits" data-cursor="grow"><span>Suits</span><span aria-hidden="true">&nearr;</span></button>
+              <button class="search-overlay__popular-item" type="button" data-search-term="Jackets" data-cursor="grow"><span>Jackets</span><span aria-hidden="true">&nearr;</span></button>
+              <button class="search-overlay__popular-item" type="button" data-search-term="Shoes" data-cursor="grow"><span>Shoes</span><span aria-hidden="true">&nearr;</span></button>
+              <button class="search-overlay__popular-item" type="button" data-search-term="Accessories" data-cursor="grow"><span>Accessories</span><span aria-hidden="true">&nearr;</span></button>
+              <button class="search-overlay__popular-item" type="button" data-search-term="New Arrivals" data-cursor="grow"><span>New Arrivals</span><span aria-hidden="true">&nearr;</span></button>
+            </div>
+          </section>
+
+          <section class="search-overlay__group">
+            <h3 class="search-overlay__section-title">TRENDING NOW</h3>
+            <div class="search-overlay__trending-grid" data-search-trending></div>
+          </section>
+
+          <a class="search-overlay__cta" href="#collections" data-search-all-products data-search-close data-cursor="grow">
+            <span>VIEW ALL PRODUCTS</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </aside>
+
+        <section class="search-overlay__results-pane">
+          <div class="search-overlay__results-head">
+            <h3 class="search-overlay__section-title">SEARCH RESULTS</h3>
+            <span class="search-overlay__results-count" data-search-count>RESULTS</span>
+          </div>
+
+          <div class="search-overlay__results" data-search-results></div>
+
+          <a class="search-overlay__cta search-overlay__cta--results" href="#collections" data-search-all-results data-search-close data-cursor="grow" hidden>
+            <span>VIEW ALL RESULTS</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </section>
+      </div>
+
+      <div class="search-overlay__benefits">
+        <div class="search-overlay__benefit"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8.5h11v7H3z"></path><path d="M14 10h3.6l2.4 2.6v2.9H14z"></path><circle cx="7.3" cy="18" r="1.5"></circle><circle cx="17.2" cy="18" r="1.5"></circle></svg><span>FREE WORLDWIDE SHIPPING</span></div>
+        <div class="search-overlay__benefit"><svg viewBox="0 0 24 24" fill="none"><path d="M7 7.5h10"></path><path d="M7 12h8"></path><path d="M7 16.5h6"></path><path d="M18 5v4h-4"></path><path d="M18 9a7 7 0 1 1-2.1-5"></path></svg><span>30-DAY RETURNS</span></div>
+        <div class="search-overlay__benefit"><svg viewBox="0 0 24 24" fill="none"><path d="M5.5 9.5h13v10h-13z"></path><path d="M8.5 9.5V7.9a3.5 3.5 0 1 1 7 0v1.6"></path></svg><span>SECURE PAYMENTS</span></div>
+        <div class="search-overlay__benefit"><svg viewBox="0 0 24 24" fill="none"><path d="m12 3.8 2.5 5.1 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z"></path></svg><span>PREMIUM QUALITY</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const body = document.body;
+      const introScreen = document.querySelector("[data-intro-screen]");
+      const introEnterButton = document.querySelector("[data-intro-enter]");
+
+      if (!body || !introScreen || !introEnterButton) {
+        return;
+      }
+
+      let introClosed = false;
+
+      const closeIntroFallback = () => {
+        if (introClosed) {
+          return;
+        }
+
+        introClosed = true;
+        body.classList.remove("is-loading", "is-intro-active", "is-intro-exit");
+        body.classList.add("is-ready", "is-intro-complete");
+        introScreen.classList.add("is-entering");
+
+        window.setTimeout(() => {
+          introScreen.classList.add("is-hidden");
+        }, 720);
+      };
+
+      introEnterButton.addEventListener("click", closeIntroFallback, { once: true });
+      window.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          closeIntroFallback();
+        }
+      });
+
+      window.setTimeout(closeIntroFallback, 2600);
+    })();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="shared-cart.js"></script>
+  <script src="shared-wishlist.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
